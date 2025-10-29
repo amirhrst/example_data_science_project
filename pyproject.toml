@@ -8,6 +8,7 @@ dependencies = [
     "ensure>=1.0.4",
     "flask>=3.1.2",
     "flask-cors>=6.0.1",
+    "ipykernel>=7.1.0",
     "joblib>=1.5.2",
     "matplotlib>=3.10.7",
     "mlflow>=3.5.1",
