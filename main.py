@@ -1,6 +1,3 @@
-def main():
-    print("Hello from dsproject!")
+from src.datascience import logger
+logger.info("Datascience package initialized.")
 
-
-if __name__ == "__main__":
-    main()
