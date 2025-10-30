@@ -1,1 +1,191 @@
 [2025-10-29 15:04:39,175: INFO: main]: Datascience package initialized.
+[2025-10-29 16:05:29,305: ERROR: 2081104617]: name 'ConfigurationManager' is not defined
+Traceback (most recent call last):
+  File "C:\Users\amirhrst\AppData\Local\Temp\ipykernel_27020\2081104617.py", line 2, in <module>
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'ConfigurationManager' is not defined
+[2025-10-29 16:06:59,651: ERROR: 2081104617]: name 'read_yaml' is not defined
+Traceback (most recent call last):
+  File "C:\Users\amirhrst\AppData\Local\Temp\ipykernel_27020\2081104617.py", line 2, in <module>
+    config = ConfigurationManager()
+  File "C:\Users\amirhrst\AppData\Local\Temp\ipykernel_27020\1377879445.py", line 5, in __init__
+    self.config = read_yaml(config_filepath)
+                  ^^^^^^^^^
+NameError: name 'read_yaml' is not defined
+[2025-10-30 09:10:52,518: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 09:10:52,520: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 09:10:52,521: ERROR: common]: Error reading YAML file: params.yaml - First argument must be mapping or iterable
+[2025-10-30 09:10:52,521: ERROR: 2081104617]: First argument must be mapping or iterable
+Traceback (most recent call last):
+  File "C:\Users\amirhrst\AppData\Local\Temp\ipykernel_13508\2081104617.py", line 2, in <module>
+    config = ConfigurationManager()
+  File "C:\Users\amirhrst\AppData\Local\Temp\ipykernel_13508\1377879445.py", line 6, in __init__
+    self.params = read_yaml(params_filepath)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "d:\Projects\dsproject\.venv\Lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "d:\Projects\dsproject\src\datascience\utils\common.py", line 29, in read_yaml
+    raise e
+  File "d:\Projects\dsproject\src\datascience\utils\common.py", line 26, in read_yaml
+    return ConfigBox(content)
+  File "box\\box.py", line 295, in box.box.Box.__init__
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+[2025-10-30 09:14:27,738: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 09:14:27,741: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 09:14:27,742: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 09:14:27,743: ERROR: 2081104617]: "'ConfigBox' object has no attribute 'artifacts_root'"
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'artifacts_root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'artifacts_root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'artifacts_root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'artifacts_root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'artifacts_root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'artifacts_root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'artifacts_root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amirhrst\AppData\Local\Temp\ipykernel_13508\2081104617.py", line 2, in <module>
+    config = ConfigurationManager()
+  File "C:\Users\amirhrst\AppData\Local\Temp\ipykernel_13508\1377879445.py", line 9, in __init__
+    create_directories([self.config.artifacts_root])
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'artifacts_root'"
+[2025-10-30 09:16:19,635: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 09:16:19,637: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 09:16:19,638: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 09:16:19,639: INFO: common]: Directory created at: artifacts
+[2025-10-30 09:16:19,640: ERROR: 2081104617]: isinstance() arg 2 must be a type, a tuple of types, or a union
+Traceback (most recent call last):
+  File "C:\Users\amirhrst\AppData\Local\Temp\ipykernel_13508\2081104617.py", line 2, in <module>
+    config = ConfigurationManager()
+  File "C:\Users\amirhrst\AppData\Local\Temp\ipykernel_13508\1377879445.py", line 9, in __init__
+    create_directories([self.config.artifacts_root])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Projects\dsproject\.venv\Lib\site-packages\ensure\main.py", line 873, in __call__
+    if not isinstance(return_val, self.return_templ):
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+[2025-10-30 09:17:54,750: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 09:17:54,751: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 09:17:54,752: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 09:17:54,753: INFO: common]: Directory created at: artifacts
+[2025-10-30 09:17:54,753: ERROR: 2081104617]: isinstance() arg 2 must be a type, a tuple of types, or a union
+Traceback (most recent call last):
+  File "C:\Users\amirhrst\AppData\Local\Temp\ipykernel_13508\2081104617.py", line 2, in <module>
+    config = ConfigurationManager()
+  File "C:\Users\amirhrst\AppData\Local\Temp\ipykernel_13508\1377879445.py", line 9, in __init__
+    create_directories([self.config.artifacts_root])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Projects\dsproject\.venv\Lib\site-packages\ensure\main.py", line 873, in __call__
+    if not isinstance(return_val, self.return_templ):
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+[2025-10-30 09:20:49,645: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 09:20:49,646: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 09:20:49,647: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 09:20:49,648: INFO: common]: Directory created at: artifacts
+[2025-10-30 09:20:49,648: ERROR: 2081104617]: isinstance() arg 2 must be a type, a tuple of types, or a union
+Traceback (most recent call last):
+  File "C:\Users\amirhrst\AppData\Local\Temp\ipykernel_13508\2081104617.py", line 2, in <module>
+    config = ConfigurationManager()
+  File "C:\Users\amirhrst\AppData\Local\Temp\ipykernel_13508\1377879445.py", line 9, in __init__
+    create_directories([self.config.artifacts_root])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Projects\dsproject\.venv\Lib\site-packages\ensure\main.py", line 873, in __call__
+    if not isinstance(return_val, self.return_templ):
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+[2025-10-30 09:21:04,010: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 09:21:04,011: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 09:21:04,012: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 09:21:04,012: INFO: common]: Directory created at: artifacts
+[2025-10-30 09:21:04,013: ERROR: 2081104617]: isinstance() arg 2 must be a type, a tuple of types, or a union
+Traceback (most recent call last):
+  File "C:\Users\amirhrst\AppData\Local\Temp\ipykernel_13508\2081104617.py", line 2, in <module>
+    config = ConfigurationManager()
+  File "C:\Users\amirhrst\AppData\Local\Temp\ipykernel_13508\1377879445.py", line 9, in __init__
+    create_directories([self.config.artifacts_root])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Projects\dsproject\.venv\Lib\site-packages\ensure\main.py", line 873, in __call__
+    if not isinstance(return_val, self.return_templ):
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+[2025-10-30 09:25:49,901: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 09:25:49,902: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 09:25:49,903: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 09:25:49,903: INFO: common]: Directory created at: artifacts
+[2025-10-30 09:25:49,904: ERROR: 2081104617]: isinstance() arg 2 must be a type, a tuple of types, or a union
+Traceback (most recent call last):
+  File "C:\Users\amirhrst\AppData\Local\Temp\ipykernel_13508\2081104617.py", line 2, in <module>
+    config = ConfigurationManager()
+  File "C:\Users\amirhrst\AppData\Local\Temp\ipykernel_13508\1377879445.py", line 9, in __init__
+    create_directories([self.config.artifacts_root])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Projects\dsproject\.venv\Lib\site-packages\ensure\main.py", line 873, in __call__
+    if not isinstance(return_val, self.return_templ):
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+[2025-10-30 09:26:16,765: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 09:26:16,766: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 09:26:16,767: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 09:26:16,768: INFO: common]: created directory at: artifacts
+[2025-10-30 09:26:16,768: INFO: common]: created directory at: artifacts/data_ingestion
+[2025-10-30 09:26:17,414: INFO: 1026146470]: Downloading data from https://github.com/krishnaik06/datasets/raw/refs/heads/main/winequality-data.zip to artifacts/data_ingestion/data.zip
+[2025-10-30 09:26:17,415: INFO: 1026146470]: Download completed.
+[2025-10-30 09:26:17,430: INFO: 1026146470]: Extracted zip file artifacts/data_ingestion/data.zip to artifacts/data_ingestion
+[2025-10-30 09:47:44,494: INFO: main]: Datascience package initialized.
+[2025-10-30 09:49:23,398: INFO: main]: Datascience package initialized.
+[2025-10-30 09:49:40,631: INFO: main]: Datascience package initialized.
+[2025-10-30 09:50:27,021: INFO: main]: Datascience package initialized.
+[2025-10-30 09:51:08,302: INFO: main]: Datascience package initialized.
+[2025-10-30 09:51:29,115: INFO: main]: Datascience package initialized.
+[2025-10-30 09:51:48,603: INFO: main]: Datascience package initialized.
+[2025-10-30 09:51:49,619: INFO: main]: >>>>>> Stage Data Ingestion Stage started <<<<<<
+[2025-10-30 09:51:49,621: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 09:51:49,622: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 09:51:49,623: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 09:51:49,624: INFO: common]: created directory at: artifacts
+[2025-10-30 09:51:49,624: INFO: common]: created directory at: artifacts/data_ingestion
+[2025-10-30 09:51:49,634: INFO: data_ingestion]: Extracted zip file artifacts/data_ingestion/data.zip to artifacts/data_ingestion
+[2025-10-30 09:51:49,634: INFO: main]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+
