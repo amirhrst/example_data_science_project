@@ -1,7 +1,8 @@
-import os 
+import os
 from src.datascience import logger
+import pandas as pd
+
 from src.datascience.entity.config_entity import DataValidationConfig
-import pandas as pd 
 
 
 class DataValiadtion:
@@ -17,20 +18,26 @@ class DataValiadtion:
 
             all_schema = self.config.all_schema.keys()
 
+            logger.info(f"CSV Columns: {all_cols}")
+            logger.info(f"Schema Columns: {list(all_schema)}")
             
             for col in all_cols:
                 if col not in all_schema:
+                    logger.error(f"Column '{col}' NOT found in schema!")
                     validation_status = False
-                    with open(self.config.STATUS_FILE, 'w') as f:
-                        f.write(f"Validation status: {validation_status}")
+                    break
                 else:
+                    logger.info(f"Column '{col}' found in schema")
                     validation_status = True
-                    with open(self.config.STATUS_FILE, 'w') as f:
-                        f.write(f"Validation status: {validation_status}")
+            
+            with open(self.config.STATUS_FILE, 'w') as f:
+                f.write(f"Validation status: {validation_status}")
 
+            logger.info(f"Final validation status: {validation_status}")
             return validation_status
         
         except Exception as e:
             raise e
 
+    
 

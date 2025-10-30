@@ -242,3 +242,471 @@ AttributeError: 'ConfigurationManager' object has no attribute 'get_data_validat
 [2025-10-30 10:56:29,080: INFO: main]: >>>>>> Stage Data Validation Stage completed <<<<<<
 
 
+[2025-10-30 11:32:45,239: INFO: main]: Datascience package initialized.
+[2025-10-30 11:33:21,896: INFO: main]: Datascience package initialized.
+[2025-10-30 11:33:22,972: INFO: main]: >>>>>> Stage Data Ingestion Stage started <<<<<<
+[2025-10-30 11:33:22,973: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 11:33:22,974: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 11:33:22,975: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 11:33:22,975: INFO: common]: created directory at: artifacts
+[2025-10-30 11:33:22,975: INFO: common]: created directory at: artifacts/data_ingestion
+[2025-10-30 11:33:22,977: INFO: data_ingestion]: Extracted zip file artifacts/data_ingestion/data.zip to artifacts/data_ingestion
+[2025-10-30 11:33:22,977: INFO: main]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+
+[2025-10-30 11:33:22,978: INFO: main]: >>>>>> Stage Data Validation Stage started <<<<<<
+[2025-10-30 11:33:22,979: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 11:33:22,980: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 11:33:22,981: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 11:33:22,981: INFO: common]: created directory at: artifacts
+[2025-10-30 11:33:22,981: INFO: common]: created directory at: artifacts/data_validation
+[2025-10-30 11:33:22,998: INFO: data_validation_pipline]: Data validation status: False
+[2025-10-30 11:33:22,998: INFO: main]: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+
+[2025-10-30 11:33:22,999: INFO: main]: >>>>>> Stage Data Transformation Stage started <<<<<<
+[2025-10-30 11:33:23,006: ERROR: data_transformation_pipline]: Your Data scheme is not valid
+Traceback (most recent call last):
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 30, in initiate_data_transformation
+    raise Exception("Your Data scheme is not valid")
+Exception: Your Data scheme is not valid
+[2025-10-30 11:33:23,007: ERROR: main]: Your Data scheme is not valid
+Traceback (most recent call last):
+  File "D:\Projects\dsproject\main.py", line 34, in <module>
+    data_transformation.initiate_data_transformation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 33, in initiate_data_transformation
+    raise e
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 30, in initiate_data_transformation
+    raise Exception("Your Data scheme is not valid")
+Exception: Your Data scheme is not valid
+[2025-10-30 11:34:09,431: INFO: main]: Datascience package initialized.
+[2025-10-30 11:34:10,442: INFO: main]: >>>>>> Stage Data Ingestion Stage started <<<<<<
+[2025-10-30 11:34:10,444: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 11:34:10,444: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 11:34:10,445: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 11:34:10,446: INFO: common]: created directory at: artifacts
+[2025-10-30 11:34:10,446: INFO: common]: created directory at: artifacts/data_ingestion
+[2025-10-30 11:34:10,448: INFO: data_ingestion]: Extracted zip file artifacts/data_ingestion/data.zip to artifacts/data_ingestion
+[2025-10-30 11:34:10,448: INFO: main]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+
+[2025-10-30 11:34:10,448: INFO: main]: >>>>>> Stage Data Validation Stage started <<<<<<
+[2025-10-30 11:34:10,449: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 11:34:10,450: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 11:34:10,451: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 11:34:10,451: INFO: common]: created directory at: artifacts
+[2025-10-30 11:34:10,451: INFO: common]: created directory at: artifacts/data_validation
+[2025-10-30 11:34:10,466: INFO: data_validation_pipline]: Data validation status: False
+[2025-10-30 11:34:10,467: INFO: main]: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+
+[2025-10-30 11:34:10,467: INFO: main]: >>>>>> Stage Data Transformation Stage started <<<<<<
+[2025-10-30 11:34:10,468: ERROR: data_transformation_pipline]: Your Data scheme is not valid
+Traceback (most recent call last):
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 30, in initiate_data_transformation
+    raise Exception("Your Data scheme is not valid")
+Exception: Your Data scheme is not valid
+[2025-10-30 11:34:10,469: ERROR: main]: Your Data scheme is not valid
+Traceback (most recent call last):
+  File "D:\Projects\dsproject\main.py", line 34, in <module>
+    data_transformation.initiate_data_transformation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 33, in initiate_data_transformation
+    raise e
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 30, in initiate_data_transformation
+    raise Exception("Your Data scheme is not valid")
+Exception: Your Data scheme is not valid
+[2025-10-30 11:34:28,912: INFO: main]: Datascience package initialized.
+[2025-10-30 11:34:29,923: INFO: main]: >>>>>> Stage Data Ingestion Stage started <<<<<<
+[2025-10-30 11:34:29,925: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 11:34:29,925: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 11:34:29,926: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 11:34:29,927: INFO: common]: created directory at: artifacts
+[2025-10-30 11:34:29,927: INFO: common]: created directory at: artifacts/data_ingestion
+[2025-10-30 11:34:29,928: INFO: data_ingestion]: Extracted zip file artifacts/data_ingestion/data.zip to artifacts/data_ingestion
+[2025-10-30 11:34:29,929: INFO: main]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+
+[2025-10-30 11:34:29,929: INFO: main]: >>>>>> Stage Data Validation Stage started <<<<<<
+[2025-10-30 11:34:29,930: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 11:34:29,930: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 11:34:29,931: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 11:34:29,932: INFO: common]: created directory at: artifacts
+[2025-10-30 11:34:29,932: INFO: common]: created directory at: artifacts/data_validation
+[2025-10-30 11:34:29,948: INFO: data_validation_pipline]: Data validation status: False
+[2025-10-30 11:34:29,948: INFO: main]: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+
+[2025-10-30 11:34:29,948: INFO: main]: >>>>>> Stage Data Transformation Stage started <<<<<<
+[2025-10-30 11:34:29,949: ERROR: data_transformation_pipline]: Your Data scheme is not valid
+Traceback (most recent call last):
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 30, in initiate_data_transformation
+    raise Exception("Your Data scheme is not valid")
+Exception: Your Data scheme is not valid
+[2025-10-30 11:34:29,950: ERROR: main]: Your Data scheme is not valid
+Traceback (most recent call last):
+  File "D:\Projects\dsproject\main.py", line 34, in <module>
+    data_transformation.initiate_data_transformation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 33, in initiate_data_transformation
+    raise e
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 30, in initiate_data_transformation
+    raise Exception("Your Data scheme is not valid")
+Exception: Your Data scheme is not valid
+[2025-10-30 11:37:14,843: INFO: main]: Datascience package initialized.
+[2025-10-30 11:37:15,921: INFO: main]: >>>>>> Stage Data Ingestion Stage started <<<<<<
+[2025-10-30 11:37:15,923: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 11:37:15,924: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 11:37:15,925: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 11:37:15,926: INFO: common]: created directory at: artifacts
+[2025-10-30 11:37:15,926: INFO: common]: created directory at: artifacts/data_ingestion
+[2025-10-30 11:37:15,928: INFO: data_ingestion]: Extracted zip file artifacts/data_ingestion/data.zip to artifacts/data_ingestion
+[2025-10-30 11:37:15,928: INFO: main]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+
+[2025-10-30 11:37:15,928: INFO: main]: >>>>>> Stage Data Validation Stage started <<<<<<
+[2025-10-30 11:37:15,929: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 11:37:15,930: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 11:37:15,931: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 11:37:15,931: INFO: common]: created directory at: artifacts
+[2025-10-30 11:37:15,931: INFO: common]: created directory at: artifacts/data_validation
+[2025-10-30 11:37:15,946: INFO: data_validation_pipline]: Data validation status: False
+[2025-10-30 11:37:15,946: INFO: main]: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+
+[2025-10-30 11:37:15,947: INFO: main]: >>>>>> Stage Data Transformation Stage started <<<<<<
+[2025-10-30 11:37:15,948: ERROR: data_transformation_pipline]: Your Data scheme is not valid
+Traceback (most recent call last):
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 30, in initiate_data_transformation
+    raise Exception("Your Data scheme is not valid")
+Exception: Your Data scheme is not valid
+[2025-10-30 11:37:15,948: ERROR: main]: Your Data scheme is not valid
+Traceback (most recent call last):
+  File "D:\Projects\dsproject\main.py", line 34, in <module>
+    data_transformation.initiate_data_transformation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 33, in initiate_data_transformation
+    raise e
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 30, in initiate_data_transformation
+    raise Exception("Your Data scheme is not valid")
+Exception: Your Data scheme is not valid
+[2025-10-30 11:40:58,502: INFO: main]: Datascience package initialized.
+[2025-10-30 11:40:59,553: INFO: main]: >>>>>> Stage Data Ingestion Stage started <<<<<<
+[2025-10-30 11:40:59,555: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 11:40:59,556: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 11:40:59,557: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 11:40:59,558: INFO: common]: created directory at: artifacts
+[2025-10-30 11:40:59,558: INFO: common]: created directory at: artifacts/data_ingestion
+[2025-10-30 11:40:59,560: INFO: data_ingestion]: Extracted zip file artifacts/data_ingestion/data.zip to artifacts/data_ingestion
+[2025-10-30 11:40:59,560: INFO: main]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+
+[2025-10-30 11:40:59,560: INFO: main]: >>>>>> Stage Data Validation Stage started <<<<<<
+[2025-10-30 11:40:59,562: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 11:40:59,562: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 11:40:59,563: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 11:40:59,563: INFO: common]: created directory at: artifacts
+[2025-10-30 11:40:59,563: INFO: common]: created directory at: artifacts/data_validation
+[2025-10-30 11:40:59,580: INFO: data_validation_pipline]: Data validation status: False
+[2025-10-30 11:40:59,580: INFO: main]: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+
+[2025-10-30 11:40:59,580: INFO: main]: >>>>>> Stage Data Transformation Stage started <<<<<<
+[2025-10-30 11:40:59,581: ERROR: data_transformation_pipline]: Your Data scheme is not valid
+Traceback (most recent call last):
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 30, in initiate_data_transformation
+    raise Exception("Your Data scheme is not valid")
+Exception: Your Data scheme is not valid
+[2025-10-30 11:40:59,582: ERROR: main]: Your Data scheme is not valid
+Traceback (most recent call last):
+  File "D:\Projects\dsproject\main.py", line 34, in <module>
+    data_transformation.initiate_data_transformation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 33, in initiate_data_transformation
+    raise e
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 30, in initiate_data_transformation
+    raise Exception("Your Data scheme is not valid")
+Exception: Your Data scheme is not valid
+[2025-10-30 11:45:14,932: INFO: main]: Datascience package initialized.
+[2025-10-30 11:45:15,918: INFO: main]: >>>>>> Stage Data Ingestion Stage started <<<<<<
+[2025-10-30 11:45:15,920: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 11:45:15,920: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 11:45:15,921: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 11:45:15,922: INFO: common]: created directory at: artifacts
+[2025-10-30 11:45:15,922: INFO: common]: created directory at: artifacts/data_ingestion
+[2025-10-30 11:45:15,924: INFO: data_ingestion]: Extracted zip file artifacts/data_ingestion/data.zip to artifacts/data_ingestion
+[2025-10-30 11:45:15,924: INFO: main]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+
+[2025-10-30 11:45:15,924: INFO: main]: >>>>>> Stage Data Validation Stage started <<<<<<
+[2025-10-30 11:45:15,925: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 11:45:15,926: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 11:45:15,927: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 11:45:15,927: INFO: common]: created directory at: artifacts
+[2025-10-30 11:45:15,927: INFO: common]: created directory at: artifacts/data_validation
+[2025-10-30 11:45:15,943: INFO: data_validation_pipline]: Data validation status: False
+[2025-10-30 11:45:15,943: INFO: main]: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+
+[2025-10-30 11:45:15,943: INFO: main]: >>>>>> Stage Data Transformation Stage started <<<<<<
+[2025-10-30 11:45:15,944: ERROR: data_transformation_pipline]: Your Data scheme is not valid
+Traceback (most recent call last):
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 30, in initiate_data_transformation
+    raise Exception("Your Data scheme is not valid")
+Exception: Your Data scheme is not valid
+[2025-10-30 11:45:15,945: ERROR: main]: Your Data scheme is not valid
+Traceback (most recent call last):
+  File "D:\Projects\dsproject\main.py", line 34, in <module>
+    data_transformation.initiate_data_transformation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 33, in initiate_data_transformation
+    raise e
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 30, in initiate_data_transformation
+    raise Exception("Your Data scheme is not valid")
+Exception: Your Data scheme is not valid
+[2025-10-30 11:46:18,578: INFO: main]: Datascience package initialized.
+[2025-10-30 11:46:19,555: INFO: main]: >>>>>> Stage Data Ingestion Stage started <<<<<<
+[2025-10-30 11:46:19,557: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 11:46:19,557: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 11:46:19,558: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 11:46:19,559: INFO: common]: created directory at: artifacts
+[2025-10-30 11:46:19,559: INFO: common]: created directory at: artifacts/data_ingestion
+[2025-10-30 11:46:19,561: INFO: data_ingestion]: Extracted zip file artifacts/data_ingestion/data.zip to artifacts/data_ingestion
+[2025-10-30 11:46:19,561: INFO: main]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+
+[2025-10-30 11:46:19,561: INFO: main]: >>>>>> Stage Data Validation Stage started <<<<<<
+[2025-10-30 11:46:19,563: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 11:46:19,563: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 11:46:19,564: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 11:46:19,564: INFO: common]: created directory at: artifacts
+[2025-10-30 11:46:19,565: INFO: common]: created directory at: artifacts/data_validation
+[2025-10-30 11:46:19,579: INFO: data_validation_pipline]: Data validation status: False
+[2025-10-30 11:46:19,580: INFO: main]: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+
+[2025-10-30 11:46:19,580: INFO: main]: >>>>>> Stage Data Transformation Stage started <<<<<<
+[2025-10-30 11:46:19,581: ERROR: data_transformation_pipline]: Your Data scheme is not valid
+Traceback (most recent call last):
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 30, in initiate_data_transformation
+    raise Exception("Your Data scheme is not valid")
+Exception: Your Data scheme is not valid
+[2025-10-30 11:46:19,582: ERROR: main]: Your Data scheme is not valid
+Traceback (most recent call last):
+  File "D:\Projects\dsproject\main.py", line 34, in <module>
+    data_transformation.initiate_data_transformation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 33, in initiate_data_transformation
+    raise e
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 30, in initiate_data_transformation
+    raise Exception("Your Data scheme is not valid")
+Exception: Your Data scheme is not valid
+[2025-10-30 11:47:23,230: INFO: main]: Datascience package initialized.
+[2025-10-30 11:47:24,212: INFO: main]: >>>>>> Stage Data Ingestion Stage started <<<<<<
+[2025-10-30 11:47:24,213: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 11:47:24,214: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 11:47:24,215: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 11:47:24,215: INFO: common]: created directory at: artifacts
+[2025-10-30 11:47:24,215: INFO: common]: created directory at: artifacts/data_ingestion
+[2025-10-30 11:47:24,217: INFO: data_ingestion]: Extracted zip file artifacts/data_ingestion/data.zip to artifacts/data_ingestion
+[2025-10-30 11:47:24,217: INFO: main]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+
+[2025-10-30 11:47:24,218: INFO: main]: >>>>>> Stage Data Validation Stage started <<<<<<
+[2025-10-30 11:47:24,219: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 11:47:24,219: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 11:47:24,220: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 11:47:24,221: INFO: common]: created directory at: artifacts
+[2025-10-30 11:47:24,221: INFO: common]: created directory at: artifacts/data_validation
+[2025-10-30 11:47:24,237: INFO: data_validation_pipline]: Data validation status: False
+[2025-10-30 11:47:24,237: INFO: main]: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+
+[2025-10-30 11:47:24,237: INFO: main]: >>>>>> Stage Data Transformation Stage started <<<<<<
+[2025-10-30 11:47:24,238: ERROR: data_transformation_pipline]: Your Data scheme is not valid
+Traceback (most recent call last):
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 30, in initiate_data_transformation
+    raise Exception("Your Data scheme is not valid")
+Exception: Your Data scheme is not valid
+[2025-10-30 11:47:24,239: ERROR: main]: Your Data scheme is not valid
+Traceback (most recent call last):
+  File "D:\Projects\dsproject\main.py", line 34, in <module>
+    data_transformation.initiate_data_transformation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 33, in initiate_data_transformation
+    raise e
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 30, in initiate_data_transformation
+    raise Exception("Your Data scheme is not valid")
+Exception: Your Data scheme is not valid
+[2025-10-30 11:53:48,929: INFO: main]: Datascience package initialized.
+[2025-10-30 11:53:49,956: INFO: main]: >>>>>> Stage Data Ingestion Stage started <<<<<<
+[2025-10-30 11:53:49,958: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 11:53:49,958: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 11:53:49,959: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 11:53:49,959: INFO: common]: created directory at: artifacts
+[2025-10-30 11:53:49,960: INFO: common]: created directory at: artifacts/data_ingestion
+[2025-10-30 11:53:49,961: INFO: data_ingestion]: Extracted zip file artifacts/data_ingestion/data.zip to artifacts/data_ingestion
+[2025-10-30 11:53:49,962: INFO: main]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+
+[2025-10-30 11:53:49,962: INFO: main]: >>>>>> Stage Data Validation Stage started <<<<<<
+[2025-10-30 11:53:49,963: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 11:53:49,963: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 11:53:49,964: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 11:53:49,965: INFO: common]: created directory at: artifacts
+[2025-10-30 11:53:49,965: INFO: common]: created directory at: artifacts/data_validation
+[2025-10-30 11:53:49,981: INFO: data_validation_pipline]: Data validation status: False
+[2025-10-30 11:53:49,981: INFO: main]: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+
+[2025-10-30 11:53:49,981: INFO: main]: >>>>>> Stage Data Transformation Stage started <<<<<<
+[2025-10-30 11:53:49,982: ERROR: data_transformation_pipline]: Your Data scheme is not valid
+Traceback (most recent call last):
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 30, in initiate_data_transformation
+    raise Exception("Your Data scheme is not valid")
+Exception: Your Data scheme is not valid
+[2025-10-30 11:53:49,983: ERROR: main]: Your Data scheme is not valid
+Traceback (most recent call last):
+  File "D:\Projects\dsproject\main.py", line 34, in <module>
+    data_transformation.initiate_data_transformation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 33, in initiate_data_transformation
+    raise e
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 30, in initiate_data_transformation
+    raise Exception("Your Data scheme is not valid")
+Exception: Your Data scheme is not valid
+[2025-10-30 11:54:22,307: INFO: main]: Datascience package initialized.
+[2025-10-30 11:54:23,325: INFO: main]: >>>>>> Stage Data Ingestion Stage started <<<<<<
+[2025-10-30 11:54:23,327: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 11:54:23,327: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 11:54:23,328: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 11:54:23,329: INFO: common]: created directory at: artifacts
+[2025-10-30 11:54:23,329: INFO: common]: created directory at: artifacts/data_ingestion
+[2025-10-30 11:54:23,331: INFO: data_ingestion]: Extracted zip file artifacts/data_ingestion/data.zip to artifacts/data_ingestion
+[2025-10-30 11:54:23,331: INFO: main]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+
+[2025-10-30 11:54:23,331: INFO: main]: >>>>>> Stage Data Validation Stage started <<<<<<
+[2025-10-30 11:54:23,332: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 11:54:23,333: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 11:54:23,334: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 11:54:23,334: INFO: common]: created directory at: artifacts
+[2025-10-30 11:54:23,334: INFO: common]: created directory at: artifacts/data_validation
+[2025-10-30 11:54:23,347: INFO: data_validation_pipline]: Data validation status: False
+[2025-10-30 11:54:23,347: INFO: main]: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+
+[2025-10-30 11:54:23,347: INFO: main]: >>>>>> Stage Data Transformation Stage started <<<<<<
+[2025-10-30 11:54:23,348: ERROR: data_transformation_pipline]: Your Data scheme is not valid
+Traceback (most recent call last):
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 30, in initiate_data_transformation
+    raise Exception("Your Data scheme is not valid")
+Exception: Your Data scheme is not valid
+[2025-10-30 11:54:23,349: ERROR: main]: Your Data scheme is not valid
+Traceback (most recent call last):
+  File "D:\Projects\dsproject\main.py", line 34, in <module>
+    data_transformation.initiate_data_transformation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 33, in initiate_data_transformation
+    raise e
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_transformation_pipline.py", line 30, in initiate_data_transformation
+    raise Exception("Your Data scheme is not valid")
+Exception: Your Data scheme is not valid
+[2025-10-30 12:24:25,603: INFO: data_validation_pipline]: >>>>>> Stage Data Validation Stage started <<<<<<
+[2025-10-30 12:24:25,606: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 12:24:25,613: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 12:24:25,614: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 12:24:25,614: INFO: common]: created directory at: artifacts
+[2025-10-30 12:24:25,614: INFO: common]: created directory at: artifacts/data_validation
+[2025-10-30 12:24:25,619: INFO: data_validation_pipline]: Data validation status: False
+[2025-10-30 12:24:25,620: INFO: data_validation_pipline]: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+
+[2025-10-30 12:24:40,974: INFO: data_validation_pipline]: >>>>>> Stage Data Validation Stage started <<<<<<
+[2025-10-30 12:24:40,975: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 12:24:40,976: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 12:24:40,977: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 12:24:40,977: INFO: common]: created directory at: artifacts
+[2025-10-30 12:24:40,977: INFO: common]: created directory at: artifacts/data_validation
+[2025-10-30 12:24:40,982: INFO: data_validation]: CSV Columns: ['fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol', 'quality']
+[2025-10-30 12:24:40,982: INFO: data_validation]: Schema Columns: ['COLUMNS', 'TARGET_COLUMN']
+[2025-10-30 12:24:40,983: ERROR: data_validation]: Column 'fixed acidity' NOT found in schema!
+[2025-10-30 12:24:40,983: INFO: data_validation]: Final validation status: False
+[2025-10-30 12:24:40,983: INFO: data_validation_pipline]: Data validation status: False
+[2025-10-30 12:24:40,983: INFO: data_validation_pipline]: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+
+[2025-10-30 12:25:03,949: INFO: data_validation_pipline]: >>>>>> Stage Data Validation Stage started <<<<<<
+[2025-10-30 12:25:03,951: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 12:25:03,952: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 12:25:03,953: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 12:25:03,953: INFO: common]: created directory at: artifacts
+[2025-10-30 12:25:03,953: INFO: common]: created directory at: artifacts/data_validation
+[2025-10-30 12:25:03,958: INFO: data_validation]: CSV Columns: ['fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol', 'quality']
+[2025-10-30 12:25:03,958: INFO: data_validation]: Schema Columns: ['fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol', 'quality']
+[2025-10-30 12:25:03,959: INFO: data_validation]: Column 'fixed acidity' found in schema
+[2025-10-30 12:25:03,959: INFO: data_validation]: Column 'volatile acidity' found in schema
+[2025-10-30 12:25:03,959: INFO: data_validation]: Column 'citric acid' found in schema
+[2025-10-30 12:25:03,959: INFO: data_validation]: Column 'residual sugar' found in schema
+[2025-10-30 12:25:03,959: INFO: data_validation]: Column 'chlorides' found in schema
+[2025-10-30 12:25:03,959: INFO: data_validation]: Column 'free sulfur dioxide' found in schema
+[2025-10-30 12:25:03,959: INFO: data_validation]: Column 'total sulfur dioxide' found in schema
+[2025-10-30 12:25:03,959: INFO: data_validation]: Column 'density' found in schema
+[2025-10-30 12:25:03,959: INFO: data_validation]: Column 'pH' found in schema
+[2025-10-30 12:25:03,959: INFO: data_validation]: Column 'sulphates' found in schema
+[2025-10-30 12:25:03,959: INFO: data_validation]: Column 'alcohol' found in schema
+[2025-10-30 12:25:03,959: INFO: data_validation]: Column 'quality' found in schema
+[2025-10-30 12:25:03,960: INFO: data_validation]: Final validation status: True
+[2025-10-30 12:25:03,960: INFO: data_validation_pipline]: Data validation status: True
+[2025-10-30 12:25:03,960: INFO: data_validation_pipline]: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+
+[2025-10-30 12:25:17,417: INFO: main]: Datascience package initialized.
+[2025-10-30 12:25:22,933: INFO: main]: >>>>>> Stage Data Ingestion Stage started <<<<<<
+[2025-10-30 12:25:22,934: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 12:25:22,935: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 12:25:22,936: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 12:25:22,936: INFO: common]: created directory at: artifacts
+[2025-10-30 12:25:22,937: INFO: common]: created directory at: artifacts/data_ingestion
+[2025-10-30 12:25:22,949: INFO: data_ingestion]: Extracted zip file artifacts/data_ingestion/data.zip to artifacts/data_ingestion
+[2025-10-30 12:25:22,949: INFO: main]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+
+[2025-10-30 12:25:22,949: INFO: main]: >>>>>> Stage Data Validation Stage started <<<<<<
+[2025-10-30 12:25:22,951: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 12:25:22,952: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 12:25:22,953: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 12:25:22,953: INFO: common]: created directory at: artifacts
+[2025-10-30 12:25:22,953: INFO: common]: created directory at: artifacts/data_validation
+[2025-10-30 12:25:22,966: INFO: data_validation]: CSV Columns: ['fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol', 'quality']
+[2025-10-30 12:25:22,966: INFO: data_validation]: Schema Columns: ['fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol', 'quality']
+[2025-10-30 12:25:22,967: INFO: data_validation]: Column 'fixed acidity' found in schema
+[2025-10-30 12:25:22,967: INFO: data_validation]: Column 'volatile acidity' found in schema
+[2025-10-30 12:25:22,967: INFO: data_validation]: Column 'citric acid' found in schema
+[2025-10-30 12:25:22,967: INFO: data_validation]: Column 'residual sugar' found in schema
+[2025-10-30 12:25:22,967: INFO: data_validation]: Column 'chlorides' found in schema
+[2025-10-30 12:25:22,967: INFO: data_validation]: Column 'free sulfur dioxide' found in schema
+[2025-10-30 12:25:22,967: INFO: data_validation]: Column 'total sulfur dioxide' found in schema
+[2025-10-30 12:25:22,967: INFO: data_validation]: Column 'density' found in schema
+[2025-10-30 12:25:22,967: INFO: data_validation]: Column 'pH' found in schema
+[2025-10-30 12:25:22,968: INFO: data_validation]: Column 'sulphates' found in schema
+[2025-10-30 12:25:22,968: INFO: data_validation]: Column 'alcohol' found in schema
+[2025-10-30 12:25:22,968: INFO: data_validation]: Column 'quality' found in schema
+[2025-10-30 12:25:22,968: INFO: data_validation]: Final validation status: True
+[2025-10-30 12:25:22,969: INFO: data_validation_pipline]: Data validation status: True
+[2025-10-30 12:25:22,969: INFO: main]: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+
+[2025-10-30 12:25:22,969: INFO: main]: >>>>>> Stage Data Transformation Stage started <<<<<<
+[2025-10-30 12:25:22,971: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 12:25:22,972: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 12:25:22,973: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 12:25:22,973: INFO: common]: created directory at: artifacts
+[2025-10-30 12:25:22,973: INFO: common]: created directory at: artifacts/data_transformation
+[2025-10-30 12:25:23,003: INFO: data_transformation]: Splited data into training and test sets
+[2025-10-30 12:25:23,003: INFO: data_transformation]: (1199, 12)
+[2025-10-30 12:25:23,003: INFO: data_transformation]: (400, 12)
+[2025-10-30 12:25:23,004: INFO: main]: >>>>>> Stage Data Transformation Stage completed <<<<<<
+
+
