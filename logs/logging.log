@@ -189,3 +189,56 @@ TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
 [2025-10-30 09:51:49,634: INFO: main]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
 
 
+[2025-10-30 10:22:48,020: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 10:22:48,022: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 10:22:48,024: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 10:22:48,025: INFO: common]: created directory at: artifacts
+[2025-10-30 10:22:48,026: INFO: common]: created directory at: artifacts/data_validation
+[2025-10-30 10:51:56,792: INFO: main]: Datascience package initialized.
+[2025-10-30 10:52:03,882: INFO: main]: Datascience package initialized.
+[2025-10-30 10:53:57,909: INFO: main]: Datascience package initialized.
+[2025-10-30 10:53:58,396: INFO: main]: >>>>>> Stage Data Ingestion Stage started <<<<<<
+[2025-10-30 10:53:58,398: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 10:53:58,399: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 10:53:58,400: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 10:53:58,400: INFO: common]: created directory at: artifacts
+[2025-10-30 10:53:58,400: INFO: common]: created directory at: artifacts/data_ingestion
+[2025-10-30 10:53:58,402: INFO: data_ingestion]: Extracted zip file artifacts/data_ingestion/data.zip to artifacts/data_ingestion
+[2025-10-30 10:53:58,402: INFO: main]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+
+[2025-10-30 10:53:58,403: INFO: main]: >>>>>> Stage Data Validation Stage started <<<<<<
+[2025-10-30 10:53:58,404: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 10:53:58,404: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 10:53:58,405: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 10:53:58,406: INFO: common]: created directory at: artifacts
+[2025-10-30 10:53:58,406: ERROR: main]: 'ConfigurationManager' object has no attribute 'get_data_validation_config'
+Traceback (most recent call last):
+  File "D:\Projects\dsproject\main.py", line 24, in <module>
+    data_validation.main()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Projects\dsproject\src\datascience\pipeline\data_validation_pipline.py", line 13, in main
+    data_validation_config = config.get_data_validation_config()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_validation_config'. Did you mean: 'get_data_ingestion_config'?
+[2025-10-30 10:56:28,602: INFO: main]: Datascience package initialized.
+[2025-10-30 10:56:29,053: INFO: main]: >>>>>> Stage Data Ingestion Stage started <<<<<<
+[2025-10-30 10:56:29,054: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 10:56:29,055: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 10:56:29,056: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 10:56:29,056: INFO: common]: created directory at: artifacts
+[2025-10-30 10:56:29,057: INFO: common]: created directory at: artifacts/data_ingestion
+[2025-10-30 10:56:29,058: INFO: data_ingestion]: Extracted zip file artifacts/data_ingestion/data.zip to artifacts/data_ingestion
+[2025-10-30 10:56:29,059: INFO: main]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+
+[2025-10-30 10:56:29,059: INFO: main]: >>>>>> Stage Data Validation Stage started <<<<<<
+[2025-10-30 10:56:29,060: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-10-30 10:56:29,061: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-10-30 10:56:29,062: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-10-30 10:56:29,062: INFO: common]: created directory at: artifacts
+[2025-10-30 10:56:29,062: INFO: common]: created directory at: artifacts/data_validation
+[2025-10-30 10:56:29,080: INFO: data_validation_pipline]: Data validation status: False
+[2025-10-30 10:56:29,080: INFO: main]: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+
