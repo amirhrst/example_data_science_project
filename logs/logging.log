@@ -710,3 +710,115 @@ Exception: Your Data scheme is not valid
 [2025-10-30 12:25:23,004: INFO: main]: >>>>>> Stage Data Transformation Stage completed <<<<<<
 
 
+[2025-11-04 09:36:09,675: INFO: main]: Datascience package initialized.
+[2025-11-04 09:36:16,265: INFO: main]: >>>>>> Stage Data Ingestion Stage started <<<<<<
+[2025-11-04 09:36:16,274: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-11-04 09:36:16,279: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-11-04 09:36:16,280: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-11-04 09:36:16,281: INFO: common]: created directory at: artifacts
+[2025-11-04 09:36:16,281: INFO: common]: created directory at: artifacts/data_ingestion
+[2025-11-04 09:36:16,293: INFO: data_ingestion]: Extracted zip file artifacts/data_ingestion/data.zip to artifacts/data_ingestion
+[2025-11-04 09:36:16,293: INFO: main]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+
+[2025-11-04 09:36:16,293: INFO: main]: >>>>>> Stage Data Validation Stage started <<<<<<
+[2025-11-04 09:36:16,295: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-11-04 09:36:16,295: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-11-04 09:36:16,296: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-11-04 09:36:16,297: INFO: common]: created directory at: artifacts
+[2025-11-04 09:36:16,297: INFO: common]: created directory at: artifacts/data_validation
+[2025-11-04 09:36:16,312: INFO: data_validation]: CSV Columns: ['fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol', 'quality']
+[2025-11-04 09:36:16,312: INFO: data_validation]: Schema Columns: ['fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol', 'quality']
+[2025-11-04 09:36:16,312: INFO: data_validation]: Column 'fixed acidity' found in schema
+[2025-11-04 09:36:16,312: INFO: data_validation]: Column 'volatile acidity' found in schema
+[2025-11-04 09:36:16,312: INFO: data_validation]: Column 'citric acid' found in schema
+[2025-11-04 09:36:16,312: INFO: data_validation]: Column 'residual sugar' found in schema
+[2025-11-04 09:36:16,312: INFO: data_validation]: Column 'chlorides' found in schema
+[2025-11-04 09:36:16,312: INFO: data_validation]: Column 'free sulfur dioxide' found in schema
+[2025-11-04 09:36:16,312: INFO: data_validation]: Column 'total sulfur dioxide' found in schema
+[2025-11-04 09:36:16,313: INFO: data_validation]: Column 'density' found in schema
+[2025-11-04 09:36:16,313: INFO: data_validation]: Column 'pH' found in schema
+[2025-11-04 09:36:16,313: INFO: data_validation]: Column 'sulphates' found in schema
+[2025-11-04 09:36:16,313: INFO: data_validation]: Column 'alcohol' found in schema
+[2025-11-04 09:36:16,313: INFO: data_validation]: Column 'quality' found in schema
+[2025-11-04 09:36:16,313: INFO: data_validation]: Final validation status: True
+[2025-11-04 09:36:16,313: INFO: data_validation_pipline]: Data validation status: True
+[2025-11-04 09:36:16,314: INFO: main]: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+
+[2025-11-04 09:36:16,314: INFO: main]: >>>>>> Stage Data Transformation Stage started <<<<<<
+[2025-11-04 09:36:16,322: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-11-04 09:36:16,323: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-11-04 09:36:16,324: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-11-04 09:36:16,324: INFO: common]: created directory at: artifacts
+[2025-11-04 09:36:16,325: INFO: common]: created directory at: artifacts/data_transformation
+[2025-11-04 09:36:16,343: INFO: data_transformation]: Splited data into training and test sets
+[2025-11-04 09:36:16,343: INFO: data_transformation]: (1199, 12)
+[2025-11-04 09:36:16,343: INFO: data_transformation]: (400, 12)
+[2025-11-04 09:36:16,343: INFO: main]: >>>>>> Stage Data Transformation Stage completed <<<<<<
+
+
+[2025-11-04 09:36:16,344: INFO: main]: >>>>>> Stage Model Training Stage started <<<<<<
+[2025-11-04 09:36:16,344: ERROR: main]: 'ModelTrainerTrainingPipeline' object has no attribute 'main'
+Traceback (most recent call last):
+  File "D:\Projects\dsproject\main.py", line 45, in <module>
+    model_trainer.main()
+    ^^^^^^^^^^^^^^^^^^
+AttributeError: 'ModelTrainerTrainingPipeline' object has no attribute 'main'
+[2025-11-04 09:36:50,040: INFO: main]: Datascience package initialized.
+[2025-11-04 09:36:51,024: INFO: main]: >>>>>> Stage Data Ingestion Stage started <<<<<<
+[2025-11-04 09:36:51,026: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-11-04 09:36:51,026: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-11-04 09:36:51,027: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-11-04 09:36:51,028: INFO: common]: created directory at: artifacts
+[2025-11-04 09:36:51,028: INFO: common]: created directory at: artifacts/data_ingestion
+[2025-11-04 09:36:51,030: INFO: data_ingestion]: Extracted zip file artifacts/data_ingestion/data.zip to artifacts/data_ingestion
+[2025-11-04 09:36:51,030: INFO: main]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+
+[2025-11-04 09:36:51,030: INFO: main]: >>>>>> Stage Data Validation Stage started <<<<<<
+[2025-11-04 09:36:51,032: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-11-04 09:36:51,032: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-11-04 09:36:51,033: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-11-04 09:36:51,033: INFO: common]: created directory at: artifacts
+[2025-11-04 09:36:51,034: INFO: common]: created directory at: artifacts/data_validation
+[2025-11-04 09:36:51,046: INFO: data_validation]: CSV Columns: ['fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol', 'quality']
+[2025-11-04 09:36:51,046: INFO: data_validation]: Schema Columns: ['fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol', 'quality']
+[2025-11-04 09:36:51,046: INFO: data_validation]: Column 'fixed acidity' found in schema
+[2025-11-04 09:36:51,046: INFO: data_validation]: Column 'volatile acidity' found in schema
+[2025-11-04 09:36:51,046: INFO: data_validation]: Column 'citric acid' found in schema
+[2025-11-04 09:36:51,046: INFO: data_validation]: Column 'residual sugar' found in schema
+[2025-11-04 09:36:51,046: INFO: data_validation]: Column 'chlorides' found in schema
+[2025-11-04 09:36:51,047: INFO: data_validation]: Column 'free sulfur dioxide' found in schema
+[2025-11-04 09:36:51,047: INFO: data_validation]: Column 'total sulfur dioxide' found in schema
+[2025-11-04 09:36:51,047: INFO: data_validation]: Column 'density' found in schema
+[2025-11-04 09:36:51,047: INFO: data_validation]: Column 'pH' found in schema
+[2025-11-04 09:36:51,047: INFO: data_validation]: Column 'sulphates' found in schema
+[2025-11-04 09:36:51,047: INFO: data_validation]: Column 'alcohol' found in schema
+[2025-11-04 09:36:51,047: INFO: data_validation]: Column 'quality' found in schema
+[2025-11-04 09:36:51,048: INFO: data_validation]: Final validation status: True
+[2025-11-04 09:36:51,048: INFO: data_validation_pipline]: Data validation status: True
+[2025-11-04 09:36:51,048: INFO: main]: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+
+[2025-11-04 09:36:51,048: INFO: main]: >>>>>> Stage Data Transformation Stage started <<<<<<
+[2025-11-04 09:36:51,051: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-11-04 09:36:51,051: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-11-04 09:36:51,052: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-11-04 09:36:51,053: INFO: common]: created directory at: artifacts
+[2025-11-04 09:36:51,053: INFO: common]: created directory at: artifacts/data_transformation
+[2025-11-04 09:36:51,067: INFO: data_transformation]: Splited data into training and test sets
+[2025-11-04 09:36:51,067: INFO: data_transformation]: (1199, 12)
+[2025-11-04 09:36:51,067: INFO: data_transformation]: (400, 12)
+[2025-11-04 09:36:51,068: INFO: main]: >>>>>> Stage Data Transformation Stage completed <<<<<<
+
+
+[2025-11-04 09:36:51,068: INFO: main]: >>>>>> Stage Model Training Stage started <<<<<<
+[2025-11-04 09:36:51,069: INFO: common]: YAML file: config\config.yaml loaded successfully
+[2025-11-04 09:36:51,070: INFO: common]: YAML file: params.yaml loaded successfully
+[2025-11-04 09:36:51,071: INFO: common]: YAML file: schema.yaml loaded successfully
+[2025-11-04 09:36:51,071: INFO: common]: created directory at: artifacts
+[2025-11-04 09:36:51,072: INFO: common]: created directory at: artifacts/model_trainer
+[2025-11-04 09:36:51,098: INFO: main]: >>>>>> Stage Model Training Stage completed <<<<<<
+
+
