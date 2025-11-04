@@ -28,8 +28,8 @@ def read_yaml(path_to_yaml: Path) -> ConfigBox:
         logger.error(f"Error reading YAML file: {path_to_yaml} - {e}")
         raise e
     
-@ensure_annotations
-def save_json(path: Path, data: Any) -> None:
+
+def save_json(path: Path, data: dict) -> None:
     """Saves data to a json file
 
     Args:

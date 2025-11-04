@@ -47,3 +47,14 @@ try:
 except Exception as e:
     logger.exception(e)
     raise e 
+
+STAGE_NAME = "Model Evaluation Stage"
+try:
+    logger.info(f">>>>>> Stage {STAGE_NAME} started <<<<<<")
+    from src.datascience.pipeline.model_evaluation_pipline import ModelEvaluationTrainingPipeline
+    model_evaluation = ModelEvaluationTrainingPipeline()
+    model_evaluation.initiate_model_evaluation()
+    logger.info(f">>>>>> Stage {STAGE_NAME} completed <<<<<<\n\n")
+except Exception as e:
+    logger.exception(e)
+    raise e
